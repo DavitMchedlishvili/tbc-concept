@@ -1,0 +1,567 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafa;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1110px;
+  margin: auto;
+
+}
+
+header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+
+  display: flex;
+
+  align-items: center;
+  z-index: 1000;
+}
+
+.header-container {
+  width: 1110px;
+  height: 80px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.header-logo {
+  width: 165px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+
+  font-weight: 400;
+}
+
+.nav-links{
+  height: 80px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+
+}
+
+
+
+.nav-links p{ 
+    letter-spacing: 1px;
+    line-height: 27px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+  
+}
+
+.search-btn-div{
+    padding: 8px;
+    cursor: pointer;
+    transition: color .25s ease-in-out;
+}
+
+.search-btn-div:hover{
+    color: #007aff;
+}
+
+.language-div{
+    height: 36px;
+    display: flex;
+    gap: 2px;
+    padding: 0px 8px;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: background-color .25s ease-in-out;
+   
+}
+
+.language-div:hover{
+    background-color: #e7ebeb;
+}
+
+.language-div p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #555f62;
+}
+
+
+.current-page {
+  padding: 104px 0px 24px;
+
+  
+  color: #141719;
+  font-size: 12px;
+  font-weight: 500;  
+
+  display: block;
+}
+
+.hero {
+  margin: 32px auto;
+  background-image: url("../assets/hero.webp");
+  background-size: 100%;
+  background-position: 0px -40px;
+
+  border-radius: 5px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 450px;
+  padding: 95px;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.hero-content h1 {
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 42px;
+}
+
+.hero-content p {
+  font-size: 14px;
+  line-height: 27.5px;
+}
+
+.hero-btn {
+  all: unset;
+  color: white;
+  max-width: 152px;
+  height: 50px;
+  background-image: linear-gradient(15deg, #001682, #3240e5);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-btn{
+    background-color: #007aff;
+}
+
+
+.hero-btn .arrow-btn{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+ } 
+
+.big-massage {
+  padding: 60px 0;
+}
+
+.big-massage p {
+  max-width: 100%;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.become-concept {
+  padding: 60px 0px;
+  border: purple 2px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.become-concept h2 {
+  font-size: 24px;
+}
+
+.concept-categories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.concept-left {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.concept-left-top,
+.concept-left-bottom {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+
+.concept-left-top .concept-background {
+  background-image: url(../assets/top-left.png);
+  height: 256px;
+}
+
+.concept-left-bottom .concept-background {
+  background-image: url(../assets/bottom-left.png);
+  height: 256px;
+}
+
+.concept-right {
+  position: relative;
+  width: 48%;
+  height: 542px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.concept-right .concept-background {
+  background-image: url(../assets/concept-right.png);
+}
+
+.concept-right .concept-background {
+  position: absolute;
+
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  transition: transform 0.5s ease;
+}
+
+.concept-background {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  transition: transform 0.5s ease;
+  filter: brightness(0.8);
+}
+
+.concept-background:hover {
+  transform: scale(1.02);
+}
+
+.concept-content {
+  position: absolute;
+  z-index: 10;
+  height: 70%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 40px;
+  display: flex;
+  color: white;
+  gap: 10px;
+}
+
+.concept-content h3 {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.arrow-btn {
+  color: white;
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.concept-content .arrow-btn:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+.arrow-btn p{
+    line-height: 20px;
+    margin-top: 2px;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+}
+
+
+.concept-right .concept-content{
+    height: 85%;
+}
+
+
+
+.numbers{
+    padding: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.numbers div{
+    border-radius: 8px;
+    width: 31.5%;
+    padding: 40px 48px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.numbers h1{
+    font-size: 44px;
+    line-height: 57px;
+    font-weight: bold;
+}
+
+
+.numbers p{
+    color: #555f62;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+
+.offers-slider{
+    padding: 60px 0px;
+}
+
+.slider-top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.slider-top h2{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+
+.blue-arrow{
+    color: #182cc0;
+    text-decoration: none;
+    transition: color .25s ease-in-out;
+}
+
+.blue-arrow:hover{
+    color: #007aff;
+}
+
+.blue-arrow p{
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+
+.slider-container{
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    
+    
+    
+}
+
+.card{
+    min-width: 31.5%;
+    max-height: 391px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e1e4e5;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 22px;
+    transition: box-shadow .4s ease-in-out, background-color .4s ease-in-out;
+
+}
+
+
+.card-img-div{
+    max-height: 212px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img{
+    height: 102%;
+
+   object-fit: cover;
+   transition: all .25s ease-in-out;
+}
+
+
+.card:hover .card-img{
+    transform: scale(1.01) translateY(-4px);
+    
+}
+
+
+.card:hover {
+    background-color: white;
+    box-shadow: 10px 59px 74px -55px rgba(184,175,184,1);
+}
+
+
+.company-logo-div{
+    
+    width: 70px;
+    height: 56px;
+}
+
+.company-logo{
+    position: absolute;
+    top: 16px;
+    right: 0;
+    width: 78px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 6px 0 0 6px;
+    overflow: hidden;
+}
+
+.card-text-wrap{
+    min-height: 177px;
+}
+.card-text{
+    
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-text-top{
+    width: 100%;
+    display: flex;
+}
+
+.card-text p{
+    color: #6f787b;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    font-weight: 700;
+}
+
+.card-text h3{
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.digital-bank{
+    background-color: white;
+    margin: 60px 0px;
+    padding: 32px 0px 0px;
+}
+
+.digital-divs-wrapper{
+    display: flex;
+    
+}
+
+.digital-left{
+    margin: 80px 0px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.digital-left h2{
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 25px;
+
+}
+
+
+.digital-left p{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 27px;
+    letter-spacing: 1px;
+}
+
+
+.smartPhone-icons{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.smartPhone-icons div{
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: 1px lightgray solid;
+    margin-top: 9px;
+    transition: background-color .25s ease-in-out;
+}
+
+.smartPhone-icons div:hover{
+    background-color: #f9fafa;
+}
+
+.digital-right{
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mobile-img{
+    width: 290px;
+    height: 373px;
+    margin-top: 20px;
+}
+
+
+.products-container{
+    display: flex;
+    
+}
+
+
+.products-container p{
+    overflow: hidden;
+}
