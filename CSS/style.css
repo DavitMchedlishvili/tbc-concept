@@ -86,9 +86,10 @@ nav {
 }
 
 .language-div{
+    
     height: 36px;
     display: flex;
-    gap: 2px;
+    gap: 5px;
     padding: 0px 8px;
     align-items: center;
     border-radius: 4px;
@@ -98,13 +99,16 @@ nav {
    
 }
 
+
+
 .language-div:hover{
     background-color: #e7ebeb;
 }
 
 .language-div p{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
+    line-height: 27px;
     color: #555f62;
 }
 
@@ -165,9 +169,12 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
+  
 }
 
-.hero-btn{
+.hero-btn:hover{
+    background-image: none;
     background-color: #007aff;
 }
 
@@ -192,7 +199,6 @@ nav {
 
 .become-concept {
   padding: 60px 0px;
-  border: purple 2px solid;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -369,6 +375,8 @@ nav {
 }
 
 
+
+
 .blue-arrow{
     color: #182cc0;
     text-decoration: none;
@@ -389,10 +397,18 @@ nav {
     width: 100%;
     overflow-x: scroll;
     display: flex;
+    border: red solid 2px;
     
-    
-    
+   
 }
+
+.slider-container-wrapper{
+  display: flex;
+  flex-direction: column;
+  border: purple 2px solid;
+}
+
+
 
 .card{
     min-width: 31.5%;
@@ -458,7 +474,7 @@ nav {
 .card-text-wrap{
     min-height: 177px;
 }
-.card-text{
+.card-text, .products-card-text{
     
     padding: 28px;
     display: flex;
@@ -485,6 +501,39 @@ nav {
     font-size: 16px;
     font-weight: 700;
 }
+
+
+
+.scroll-buttons{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: red solid 2px;
+  align-items: center;
+
+  
+}
+
+.scroll-div{
+  width: 90%;
+  background: lightgrey;
+  height: 3px;
+}
+
+.scroll-thumb{
+  width: calc(100% / 3);
+  height: 3px;
+  background-color: #001682;
+}
+
+
+.buttons-div{
+  display: flex;
+  gap: 20px;
+}
+
+
 
 .digital-bank{
     background-color: white;
@@ -556,12 +605,226 @@ nav {
 }
 
 
+.products{
+  padding: 60px 0px;
+}
+
+
+.products h2{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 32px;
+}
+
 .products-container{
     display: flex;
     
 }
 
-
-.products-container p{
-    overflow: hidden;
+.products-card-text h3{
+  font-size: 16px;
+  font-weight: 700;
 }
+
+.products-card-paragraph p{
+  font-size: 14px;
+  color: #555f62;
+  line-height: 24px;
+  height: 96px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.products-card-paragraph strong{
+  font-weight: 700;
+}
+
+
+.personal-banker-section{
+  padding: 32px 0px 60px;
+}
+
+.personal-banker{
+  
+  background-image: url("../assets/girl.png");
+  background-size: cover;
+  padding: 95px;
+  border-radius: 8px;
+}
+
+
+.banker-content{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.banker-content h1{
+  color: white;
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.banker-content p{
+  color: white;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+
+.banker-content .hero-btn{
+  font-size: 12px;
+  font-weight: 700;
+
+  max-width: 133px;
+}
+
+
+.second-slider{
+  padding: 60px 0px;
+}
+
+.just-div{
+  height: 351px;
+  border: red solid 2px;
+
+}
+
+
+footer{
+  padding-top: 60px;
+  background-color: white;
+
+}
+
+footer p{
+  color: #555f62;
+}
+
+.footer-top{
+  display: flex;
+  padding: 45px 47px 50px;
+  justify-content: space-between;
+  background-color: white;
+}
+
+
+.footer-main{
+  padding: 0px 47px 45px;
+  display: flex;
+  gap: 20px;
+  background-color: white;
+}
+
+.footer-main-info{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+
+
+.footer-main-info h1{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  
+}
+
+.tel-mail-pin{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+
+
+.footer-main-info p{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 27px;
+  cursor: pointer;
+  
+}
+
+.footer-main-info p:hover{
+  color: #001682;
+}
+
+.tel-mail-pin p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #555f62;
+  cursor: pointer;
+}
+
+.tel-mail-pin p:hover{
+  text-decoration: underline;
+  color: #555f62;
+}
+
+.footer-bottom-overlay{
+  border-top: 1px #eef1f1 solid;
+}
+
+.footer-bottom{
+  
+  display: flex;
+  padding: 28px 47px;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.footer-bottom p{
+  font-size: 12px;
+  font-weight: 300;
+}
+
+
+.footer-bottom-left{
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #556f62;
+}
+
+.footer-bottom-right{
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  color: #556f62;
+}
+
+.last-bottom{
+  display: flex;
+  gap: 10px;
+}
+
+.social{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #f9fafa;
+  cursor: pointer;
+  transition: background-color .25s ease-in-out;
+}
+
+.social:hover{
+  background-color: lightgray;
+}
+
+
+.social-icon:hover{
+  fill: #001682;
+}
+
