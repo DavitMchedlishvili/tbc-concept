@@ -39,7 +39,7 @@
                 </nav>
                 <div class="header-buttons">
                     <div class="search-btn-div">
-                        <svg data-v-562b0aec="" width="24" height="24" viewbox="0 0 24 24" fill="#555f62"
+                        <svg class="search-icon" data-v-562b0aec="" width="24" height="24" viewbox="0 0 24 24" fill="#555f62"
                             xmlns="http://www.w3.org/2000/svg">
                             <path data-v-562b0aec=""
                                 d="M21.7 20.3L15.5 14C16.5 12.7 17 11.2 17 9.5C17 5.4 13.6 2 9.5 2C5.4 2 2 5.4 2 9.5C2 13.6 5.4 17 9.5 17C11.2 17 12.8 16.4 14 15.5L20.2 21.7C20.4 21.9 20.7 22 20.9 22C21.1 22 21.4 21.9 21.6 21.7C22.1 21.3 22.1 20.7 21.7 20.3ZM4 9.5C4 6.5 6.5 4 9.5 4C12.5 4 15 6.5 15 9.5C15 12.5 12.5 15 9.5 15C6.5 15 4 12.5 4 9.5Z">
@@ -190,134 +190,19 @@
                     <p>ყველა შეთავაზება</p>
                 </a>
             </div>
-            <div class="slider-container-wrapper">
-                <div class="slider-container">
-                    <div class="card">
-                        <div class="card-img-div">
-                            <img class="card-img" src="./assets/MP Development.png" alt="mpdev" />
-                            <div class="company-logo-div">
-                                <img class="company-logo" src="./assets/logos/MPIcon.jpg" alt="mpdev" />
-                            </div>
-                        </div>
-                        <div class="card-text-wrap">
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p>ინვესტიციები</p>
-                                </div>
-                                <h3 class="card-title">
-                                    MP დეველოპმენტი - აშშ და ევროს ობლიგაციები
-                                </h3>
-                            </div>
+            <div class="slider-container-wrapper" id="slider-wrapper">
+                <div id="slider-card-container" class="slider-card-container"></div>
+                <div class="slider-tools">
+                    <div class="slider-scrollbar" id="offers-scrollBar">
+                        <div class="scrollbar-track">
+                            <div class="scrollbar-thumb" id="offers-scrollThumb"></div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-img-div">
-                            <img class="card-img" src="./assets/Iveria.jpg" alt="iveria" />
-                            <div class="company-logo-div">
-                                <img class="company-logo" src="./assets/logos/iveriabeachlogo.png" alt="iveria" />
-                            </div>
-                        </div>
-                        <div class="card-text-wrap">
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p>ჯაზ ფესტივალის შეთავაზებები</p>
-                                </div>
-                                <h3 class="card-title">IVERIA BEACH - დაიბრუნეთ 30%</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-div">
-                            <img class="card-img" src="./assets/TegetaGarage.png" alt="TegetaGarage" />
-                            <div class="company-logo-div">
-                                <img class="company-logo" src="./assets/logos/TegetaIcon.png" alt="tegeta" />
-                            </div>
-                        </div>
-                        <div class="card-text-wrap">
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p>ავტო</p>
-                                    <p>თეგეტა მოტორსი</p>
-                                </div>
-                                <h3 class="card-title">თეგეტა მოტორსი - 50% ფასდაკლება</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-div">
-                            <img class="card-img" src="./assets/TegetaOffice.png" alt="TegetaOffice" />
-                            <div class="company-logo-div">
-                                <img class="company-logo" src="./assets/logos/TegetaIcon.png" alt="tegeta" />
-                            </div>
-                        </div>
-                        <div class="card-text-wrap">
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p>ავტო</p>
-                                    <p>ჯაზ ფესტივალის შეთავაზებები</p>
-                                    <p>თეგეტა მოტორსი</p>
-                                </div>
-                                <h3 class="card-title">თეგეტა მოტორსი - ბათუმი</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-div">
-                            <img class="card-img" src="./assets/LeMeredian.png" alt="LeMeredian" />
-                            <div class="company-logo-div">
-                                <img class="company-logo" src="./assets/logos/LeMeredianIcon.png" alt="LeMeredian" />
-                            </div>
-                        </div>
-                        <div class="card-text-wrap">
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p>დასვენება</p>
-                                    <p>ვიზა</p>
-                                    <p>ჯაზ ფესტივალის შეთავაზებები</p>
-                                </div>
-                                <h3 class="card-title">
-                                    Le Meridien Batumi - 15%-იანი ფასდაკლება
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-div">
-                            <img class="card-img" src="./assets/Collosoeum.png" alt="Collosoeum" />
-                            <div class="company-logo-div">
-                                <img class="company-logo" src="./assets/logos/ColloseumIcon.png" alt="Collosoeum" />
-                            </div>
-                        </div>
-                        <div class="card-text-wrap">
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p>დასვენება</p>
-                                    <p>ვიზა</p>
-                                    <p>ჯაზ ფესტივალის შეთავაზებები</p>
-                                </div>
-                                <h3 class="card-title">
-                                    Colosseum Marina Hotel - 15%-იანი ფასდაკლება
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="scroll-buttons">
-                    <div class="scroll-div">
-                        <div class="scroll-thumb"></div>
-                    </div>
-                    <div class="buttons-div">
-                        <svg class="left-scroll" data-v-79b32762="" width="20" height="20" viewBox="0 0 20 20" fill="#555f62"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path data-v-79b32762=""
-                                d="M7.7513 3.58331L1.91797 9.41665C1.58464 9.74998 1.58464 10.25 1.91797 10.5833L7.7513 16.4166C8.08464 16.75 8.58464 16.75 8.91797 16.4166C9.2513 16.0833 9.2513 15.5833 8.91797 15.25L4.5013 10.8333H17.5013C18.0013 10.8333 18.3346 10.5 18.3346 9.99998C18.3346 9.49998 18.0013 9.16665 17.5013 9.16665H4.5013L8.91797 4.74998C9.08464 4.58331 9.16797 4.41665 9.16797 4.16665C9.16797 3.91665 9.08464 3.74998 8.91797 3.58331C8.58464 3.24998 8.08464 3.24998 7.7513 3.58331Z">
-                            </path>
-                        </svg>
-                        <svg class="right-scroll" data-v-79b32762="" width="20" height="20" viewBox="0 0 20 20" fill="#556f62" xmlns="http://www.w3.org/2000/svg"><path data-v-79b32762="" d="M12.2513 3.58331L18.0846 9.41665C18.418 9.74998 18.418 10.25 18.0846 10.5833L12.2513 16.4166C11.918 16.75 11.418 16.75 11.0846 16.4166C10.7513 16.0833 10.7513 15.5833 11.0846 15.25L15.5013 10.8333H2.5013C2.0013 10.8333 1.66797 10.5 1.66797 9.99998C1.66797 9.49998 2.0013 9.16665 2.5013 9.16665H15.5013L11.0846 4.74998C10.918 4.58331 10.8346 4.41665 10.8346 4.16665C10.8346 3.91665 10.918 3.74998 11.0846 3.58331C11.418 3.24998 11.918 3.24998 12.2513 3.58331Z"></path></svg>
-                    </div>
+                    <button id="left-slide" class="slider-card-container-button scroll-btn"><svg data-v-00ef924e="" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path data-v-00ef924e="" d="M7.7513 3.58331L1.91797 9.41665C1.58464 9.74998 1.58464 10.25 1.91797 10.5833L7.7513 16.4166C8.08464 16.75 8.58464 16.75 8.91797 16.4166C9.2513 16.0833 9.2513 15.5833 8.91797 15.25L4.5013 10.8333H17.5013C18.0013 10.8333 18.3346 10.5 18.3346 9.99998C18.3346 9.49998 18.0013 9.16665 17.5013 9.16665H4.5013L8.91797 4.74998C9.08464 4.58331 9.16797 4.41665 9.16797 4.16665C9.16797 3.91665 9.08464 3.74998 8.91797 3.58331C8.58464 3.24998 8.08464 3.24998 7.7513 3.58331Z"></path></svg></button>
+                    <button id="right-slide" class="slider-card-container-button scroll-btn"><svg data-v-00ef924e="" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path data-v-00ef924e="" d="M12.2513 3.58331L18.0846 9.41665C18.418 9.74998 18.418 10.25 18.0846 10.5833L12.2513 16.4166C11.918 16.75 11.418 16.75 11.0846 16.4166C10.7513 16.0833 10.7513 15.5833 11.0846 15.25L15.5013 10.8333H2.5013C2.0013 10.8333 1.66797 10.5 1.66797 9.99998C1.66797 9.49998 2.0013 9.16665 2.5013 9.16665H15.5013L11.0846 4.74998C10.918 4.58331 10.8346 4.41665 10.8346 4.16665C10.8346 3.91665 10.918 3.74998 11.0846 3.58331C11.418 3.24998 11.918 3.24998 12.2513 3.58331Z"></path></svg></button>
                 </div>
                 
+
             </div>
 
         </section>
@@ -522,70 +407,88 @@
 
         <section class="products container">
             <h2>პროდუქტები</h2>
-            <div class="products-container">
-                <div class="card">
-                    <div class="card-img-div">
-                        <img class="card-img" src="./assets/top-left.png" alt="" />
+            <div class="products-container-overlay">
+
+                <div class="products-container" id="products-container">
+                    <div class="card">
+                        <div class="card-img-div">
+                            <img class="card-img" src="./assets/top-left.png" alt="" />
+                        </div>
+                        <div class="card-text-wrap">
+                            <div class="products-card-text">
+                                <h3 class="card-title">ციფრული</h3>
+                                <div class="products-card-paragraph">
+                                    <p>
+                                        თიბისი კონცეპტის ციფრული ნაკრები განკუთვნილია მათთვის,
+                                        ვისთვისაც
+                                        <strong>საბანკო მომსახურებით სარგებლობა ყოველდღიურობის
+                                            ნაწილია</strong>, ვინც აქტიურად მოიხმარს
+                                        <strong>არასაბანკო პროდუქტებსა და შეთავაზებებს</strong> და
+                                        ვისაც ურჩევნია დამოუკიდებლად,
+                                        <strong>პირადი ბანკირის გარეშე</strong> მართოს საკუთარი
+                                        ფინანსები და საბანკო ოპერაციები.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-text-wrap">
-                        <div class="products-card-text">
-                            <h3 class="card-title">ციფრული</h3>
-                            <div class="products-card-paragraph">
-                                <p>
-                                    თიბისი კონცეპტის ციფრული ნაკრები განკუთვნილია მათთვის,
-                                    ვისთვისაც
-                                    <strong>საბანკო მომსახურებით სარგებლობა ყოველდღიურობის
-                                        ნაწილია</strong>, ვინც აქტიურად მოიხმარს
-                                    <strong>არასაბანკო პროდუქტებსა და შეთავაზებებს</strong> და
-                                    ვისაც ურჩევნია დამოუკიდებლად,
-                                    <strong>პირადი ბანკირის გარეშე</strong> მართოს საკუთარი
-                                    ფინანსები და საბანკო ოპერაციები.
-                                </p>
+                    <div class="card">
+                        <div class="card-img-div">
+                            <img class="card-img" src="./assets/bottom-left.png" alt="" />
+                        </div>
+                        <div class="card-text-wrap">
+                            <div class="products-card-text">
+                                <h3 class="card-title">პრემიუმი</h3>
+                                <div class="products-card-paragraph">
+                                    <p>
+                                        თიბისი კონცეპტის მომხმარებლებთან ურთიერთობის ერთ-ერთი
+                                        ფორმატი - <strong>პრემიუმ ნაკრები</strong>, სხვა საბანკო და
+                                        არასაბანკო უპირატესობებთან ერთად,
+                                        <strong>პირადი ბანკირის მომსახურებას</strong> გულისხმობს.
+                                        პირადი ბანკირის მთავარი ამოცანა მომხარებლისთვის ცხოვრების
+                                        გამარტივება და მისთვის უმაღლესი ხარისხის მომსახურების
+                                        უზრუნველყოფაა.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-div">
+                            <img class="card-img" src="./assets/concept-right.png" alt="" />
+                        </div>
+                        <div class="card-text-wrap">
+                            <div class="products-card-text">
+                                <h3 class="card-title">360</h3>
+                                <div class="products-card-paragraph">
+                                    <p>
+                                        <strong>თიბისი კონცეპტის 360</strong> ნაკრები განკუთვნილია
+                                        მათთვის, ვისაც სხვა საბანკო და არასაბანკო უპიტარესობებთან
+                                        ერთად, კიდევ უფრო
+                                        <strong>მეტი ფინანსური ინსტრუმენტი</strong> და
+                                        <strong>გაზრდილი შესაძლებლობები</strong> ესაჭიროება.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-img-div">
-                        <img class="card-img" src="./assets/bottom-left.png" alt="" />
-                    </div>
-                    <div class="card-text-wrap">
-                        <div class="products-card-text">
-                            <h3 class="card-title">პრემიუმი</h3>
-                            <div class="products-card-paragraph">
-                                <p>
-                                    თიბისი კონცეპტის მომხმარებლებთან ურთიერთობის ერთ-ერთი
-                                    ფორმატი - <strong>პრემიუმ ნაკრები</strong>, სხვა საბანკო და
-                                    არასაბანკო უპირატესობებთან ერთად,
-                                    <strong>პირადი ბანკირის მომსახურებას</strong> გულისხმობს.
-                                    პირადი ბანკირის მთავარი ამოცანა მომხარებლისთვის ცხოვრების
-                                    გამარტივება და მისთვის უმაღლესი ხარისხის მომსახურების
-                                    უზრუნველყოფაა.
-                                </p>
+                <div class="slider-container-wrapper" id="slider-wrapper">
+                    <div id="products-slider-container" class="products-slider-container"></div>
+                    <div class="slider-tools">
+                        <div class="slider-scrollbar" id="products-scrollBar">
+                            <div class="scrollbar-track products-container-scroll">
+                                <div class="scrollbar-thumb" id="products-scrollThumb"></div>
                             </div>
                         </div>
+                        <button id="left-slide" class="products-slider-container-button scroll-btn"><svg data-v-00ef924e="" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path data-v-00ef924e="" d="M7.7513 3.58331L1.91797 9.41665C1.58464 9.74998 1.58464 10.25 1.91797 10.5833L7.7513 16.4166C8.08464 16.75 8.58464 16.75 8.91797 16.4166C9.2513 16.0833 9.2513 15.5833 8.91797 15.25L4.5013 10.8333H17.5013C18.0013 10.8333 18.3346 10.5 18.3346 9.99998C18.3346 9.49998 18.0013 9.16665 17.5013 9.16665H4.5013L8.91797 4.74998C9.08464 4.58331 9.16797 4.41665 9.16797 4.16665C9.16797 3.91665 9.08464 3.74998 8.91797 3.58331C8.58464 3.24998 8.08464 3.24998 7.7513 3.58331Z"></path></svg></button>
+                        <button id="right-slide" class="products-slider-container-button scroll-btn"><svg data-v-00ef924e="" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path data-v-00ef924e="" d="M12.2513 3.58331L18.0846 9.41665C18.418 9.74998 18.418 10.25 18.0846 10.5833L12.2513 16.4166C11.918 16.75 11.418 16.75 11.0846 16.4166C10.7513 16.0833 10.7513 15.5833 11.0846 15.25L15.5013 10.8333H2.5013C2.0013 10.8333 1.66797 10.5 1.66797 9.99998C1.66797 9.49998 2.0013 9.16665 2.5013 9.16665H15.5013L11.0846 4.74998C10.918 4.58331 10.8346 4.41665 10.8346 4.16665C10.8346 3.91665 10.918 3.74998 11.0846 3.58331C11.418 3.24998 11.918 3.24998 12.2513 3.58331Z"></path></svg></button>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-div">
-                        <img class="card-img" src="./assets/concept-right.png" alt="" />
-                    </div>
-                    <div class="card-text-wrap">
-                        <div class="products-card-text">
-                            <h3 class="card-title">360</h3>
-                            <div class="products-card-paragraph">
-                                <p>
-                                    <strong>თიბისი კონცეპტის 360</strong> ნაკრები განკუთვნილია
-                                    მათთვის, ვისაც სხვა საბანკო და არასაბანკო უპიტარესობებთან
-                                    ერთად, კიდევ უფრო
-                                    <strong>მეტი ფინანსური ინსტრუმენტი</strong> და
-                                    <strong>გაზრდილი შესაძლებლობები</strong> ესაჭიროება.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    
+    
                 </div>
             </div>
+
         </section>
         <section class="personal-banker-section container">
             <div class="personal-banker">
@@ -597,8 +500,16 @@
             </div>
         </section>
         <section class="second-slider container">
-            <div class="just-div">
-                <p>I am second slider</p>
+            <h1>ჯილდოები</h1>
+            <div id="awards-slider-container" class="awards-slider-container"></div>
+            <div class="slider-tools">
+                <div class="slider-scrollbar" id="awards-scrollBar">
+                    <div class="scrollbar-track">
+                        <div class="scrollbar-thumb" id="awards-scrollThumb"></div>
+                    </div>
+                </div>
+                <button id="left-slide" class="awards-slider-container-button scroll-btn"><svg data-v-00ef924e="" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path data-v-00ef924e="" d="M7.7513 3.58331L1.91797 9.41665C1.58464 9.74998 1.58464 10.25 1.91797 10.5833L7.7513 16.4166C8.08464 16.75 8.58464 16.75 8.91797 16.4166C9.2513 16.0833 9.2513 15.5833 8.91797 15.25L4.5013 10.8333H17.5013C18.0013 10.8333 18.3346 10.5 18.3346 9.99998C18.3346 9.49998 18.0013 9.16665 17.5013 9.16665H4.5013L8.91797 4.74998C9.08464 4.58331 9.16797 4.41665 9.16797 4.16665C9.16797 3.91665 9.08464 3.74998 8.91797 3.58331C8.58464 3.24998 8.08464 3.24998 7.7513 3.58331Z"></path></svg></button>
+                <button id="right-slide" class="awards-slider-container-button scroll-btn"><svg data-v-00ef924e="" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path data-v-00ef924e="" d="M12.2513 3.58331L18.0846 9.41665C18.418 9.74998 18.418 10.25 18.0846 10.5833L12.2513 16.4166C11.918 16.75 11.418 16.75 11.0846 16.4166C10.7513 16.0833 10.7513 15.5833 11.0846 15.25L15.5013 10.8333H2.5013C2.0013 10.8333 1.66797 10.5 1.66797 9.99998C1.66797 9.49998 2.0013 9.16665 2.5013 9.16665H15.5013L11.0846 4.74998C10.918 4.58331 10.8346 4.41665 10.8346 4.16665C10.8346 3.91665 10.918 3.74998 11.0846 3.58331C11.418 3.24998 11.918 3.24998 12.2513 3.58331Z"></path></svg></button>
             </div>
         </section>
         <footer>
