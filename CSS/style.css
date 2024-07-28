@@ -8,7 +8,7 @@ body {
 .container {
   width: 1110px;
   margin: auto;
-
+  
 }
 
 header {
@@ -58,7 +58,7 @@ nav {
 
 
 
-.nav-links p{ 
+.nav-links div{ 
     letter-spacing: 1px;
     line-height: 27px;
     cursor: pointer;
@@ -112,6 +112,82 @@ nav {
     color: #555f62;
 }
 
+
+.trigger-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.trigger {
+  all: unset;
+  display: flex;
+  cursor: pointer;
+  height: 100%;
+  margin: 0 5px;
+  align-items: center;
+
+}
+
+
+.dropDown-container {
+  display: flex;
+  position: fixed;
+  background-color: white;
+  border-radius: 0px 0px 4px 4px;
+  padding: 20px 0px;
+  margin: 81px 396.5px;
+  z-index: 100;
+}
+
+.trigger-link {
+  display: block;
+  margin: 5px 0;
+  color: black; 
+  text-decoration: none; 
+}
+
+.dropdowns{
+  display: flex;
+
+}
+
+.trigger-link-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.trigger-link-container a{
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 700;
+}
+
+.dropdowns a:hover {
+  color: #007aff; 
+}
+
+
+
+.concept-card-img .arrow-btn{
+  gap: 10px;
+  margin-top: 10px;
+}
+
+
+.first-drop .trigger-link-container{
+  margin-left: 50px;
+}
+
+.second-drop .trigger-link-container{
+  margin-left: 230px;
+}
+
+.third-drop .trigger-link-container{
+  margin-left: 400px;
+}
 
 .current-page {
   padding: 104px 0px 24px;
@@ -398,20 +474,21 @@ nav {
     overflow-x: scroll;
     scrollbar-width: none;
     display: flex;
-    margin-bottom: 50px;
     cursor: grab;
- 
+    padding-bottom: 50px;
 }
 
 
 .slider-card-container:active{
   cursor: grabbing;
+  
 }
 
 .slider-container-wrapper{
   display: flex;
   flex-direction: column;
- 
+  
+
 }
 
 
@@ -561,36 +638,6 @@ nav {
 }
 
 
-
-/* 
-.scroll-buttons{
-  margin-top: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  border: red solid 2px;
-  align-items: center;
-
-  
-}
-
-.scroll-div{
-  width: 90%;
-  background: lightgrey;
-  height: 3px;
-}
-
-.scroll-thumb{
-  width: calc(100% / 3);
-  height: 3px;
-  background-color: #001682;
-}
-
-
-.buttons-div{
-  display: flex;
-  gap: 20px;
-} */
 
 
 .scroll-btn.active {
@@ -838,25 +885,6 @@ nav {
   color: #6f787b;
   line-height: 23px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,3 +1,44 @@
+//////////////header buttons - drop down 
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const triggers = document.querySelectorAll('.trigger');
+  
+  const dropdownContainer = document.getElementById('dropDown-container');
+
+  triggers.forEach(trigger => {
+      trigger.addEventListener('click', (event) => {
+          const content = event.currentTarget.getAttribute('data-content');
+          
+          dropdownContainer.innerHTML = content;
+          if(dropdownContainer.style.display !== "flex"){
+            dropdownContainer.style.display = 'flex';
+            trigger.style.borderBottom = "2px solid blue"
+          }else{
+            dropdownContainer.style.display = "none"
+            trigger.style.borderBottom = "none"
+          }
+      });
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////// sliderCards;
+
+
 const sliderCardsContainer = document.getElementById("slider-card-container");
 
 const sliderCards = [
